@@ -1,0 +1,18 @@
+<div class="row">
+  <h1 class="text-center">The Home Page</h1>
+  <a href="" class="pull-right btn btn-primary glyphicon glyphicon-plus" ng-click="createPerson()"></a>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" ng-repeat="person in persons track by person.id">
+  <div class="list-group">
+    <a href="/person/{{person.id}}" class="list-group-item">
+      <h4 class="list-group-item-heading">{{person.firstName}} {{person.lastName}}</h4>
+      <p class="list-group-item-text">{{person.notes}}</p>
+    </a>
+    <a class="btn btn-danger glyphicon glyphicon-pencil" ng-click="updatePerson(person)"></a>
+    <a class="btn btn-danger glyphicon glyphicon-trash" ng-click="deletePerson(person)"></a>
+  </div>
+</div>
+
+</div>

@@ -20,13 +20,13 @@ module.exports = {
       type:'string'
     },
     //Associations
-    contacts:{
+    contact:{
       collection:'Contact',
       via:'person'
     },
-    categorys:{
+    category:{
       collection:'Category',
-      via: 'persons'
+      via: 'person'
     }
 
   }

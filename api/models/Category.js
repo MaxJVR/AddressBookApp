@@ -14,9 +14,9 @@ module.exports = {
       unique: true
     },
     //Associations
-    persons:{
+    person:{
       collection:'Person',
-      via:'categorys'
+      via:'category'
     }
 
   }

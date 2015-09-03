@@ -7,11 +7,5 @@
 
 module.exports = {
 
-  addPerson: function  (req,res) {
-    // res.send("person")
-    Person.findByfirstName('Max').then(function  (person) {
-      person.categorys.add({name:'Epic'})
-    })
-  }
 };
 
